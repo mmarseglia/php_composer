@@ -23,7 +23,7 @@ class php_composer (
       mv ${install_dir}/composer.phar ${install_dir}composer",
     require => [
       Package['curl'],
-      Package['php54w'],
+      Package['php'],
     ],
   }
 
