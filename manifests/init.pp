@@ -14,9 +14,7 @@
 class php_composer (
   $composer_url = $php_composer::params::url,
   $install_dir  = $php_composer::params::install_dir,
-) {
-
-  include ::php_composer::params
+) inherits php_composer::params {
 
   # install composer
   exec { 'install_composer' :
