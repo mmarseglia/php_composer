@@ -12,7 +12,7 @@
 # * install_dir: where to install composer to
 #
 class php_composer (
-  $composer_url = $php_composer::params::url,
+  $composer_url = $php_composer::params::composer_url,
   $install_dir  = $php_composer::params::install_dir,
 ) inherits php_composer::params {
 
