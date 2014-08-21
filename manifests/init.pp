@@ -19,8 +19,8 @@ class php_composer (
   # install composer
   exec { 'install_composer' :
     command => "/usr/bin/curl -sS ${composer_url} | \
-      php -- --install-dir=${install_dir}; \
-      mv ${install_dir}/composer.phar ${install_dir}composer",
+      /usr/bin/php -- --install-dir=${install_dir}; \
+      /bin/mv ${install_dir}/composer.phar ${install_dir}composer",
     require => [
       Package['curl'],
       Package['php'],
